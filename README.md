@@ -1,4 +1,4 @@
-# AI Chessathon (stockveg-on-tuesday)
+# AI Chessathon (stockveg-on-tuesdays)
 
 Fork this to build an agent for [AI Chessathon](https://aichessathon.com). It gives you a working
 submission, baselines to beat, and a local harness that speaks the same protocol and enforces the
