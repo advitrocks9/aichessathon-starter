@@ -53,10 +53,9 @@ def main() -> None:
     for name in written:
         print(f"  {name}")
     if unzipped > MAX_UNZIPPED_BYTES:
-        over = unzipped / MAX_UNZIPPED_BYTES
         print(
-            f"\nwarning: {unzipped / 1024 / 1024:.1f} MB unzipped is {over:.1f}x the "
-            f"{MAX_UNZIPPED_BYTES // 1024 // 1024} MB limit. The platform will reject this upload"
+            f"\nwarning: {unzipped:,} bytes unzipped is over the "
+            f"{MAX_UNZIPPED_BYTES // 1_000_000} MB limit. The platform will reject this upload"
         )
 
 
