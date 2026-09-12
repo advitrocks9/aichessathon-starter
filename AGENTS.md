@@ -19,7 +19,8 @@ anything about limits, deadlines or what is allowed, and before you rely on a nu
 - Your colour is the side to move in the fen. There is no other input.
 - One process per game, started fresh for every game. It stays alive between your moves, so
   module state survives to your next move in the same game, never to the next game.
-- Importing your agent has its own 90 s budget before the clock starts. Load weights there.
+- Importing your agent has its own budget before the clock starts, 90 s in the qualifier and
+  30 s at the final. Load weights there.
 - The clock is 120 s plus 0.5 s per move, per side, on wall time. `time_left_ms` is the clock
   before your move. The increment lands after it.
 - One core of an AMD EPYC 9V74, measured at 2.60 GHz. 2 GB RAM. No network. No GPU. Identical

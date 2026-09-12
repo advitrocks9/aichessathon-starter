@@ -105,8 +105,8 @@ and prints the 95% interval, so you can see when a result is real instead of gue
 - Flagging. See time management above.
 - Crashing on an edge case. No legal moves, a promotion, an en passant capture. Play a few hundred
   games against a random baseline and the rare paths show up.
-- Blowing the 90 second import budget loading weights. Warm jitted functions inside it, not on
-  the clock.
+- Blowing the import budget loading weights, 90 seconds in the qualifier and 30 at the final.
+  Warm jitted functions inside it, not on the clock.
 - Writing anywhere but `/tmp`. Everything else is read-only, and `/tmp` is wiped between games, so
   nothing you write survives. numba's `cache=True` never hits.
 - More threads than cores. `torch.set_num_threads(1)`.

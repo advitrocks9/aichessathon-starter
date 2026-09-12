@@ -4,7 +4,7 @@ import random
 
 import chess
 
-# Import time runs at the game start. 90s to import packages, build tables etc.
+# Import time runs before the clock starts. 90s in the qualifier, 30s at the final.
 
 
 def get_move(fen: str, time_left_ms: int) -> str:
